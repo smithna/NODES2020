@@ -1,2 +1,2 @@
 # NODES2020
-Presentation for Neo4j NODES conference
+Material for *From Local Strategies to Global Patterns* presentation at Neo4j NODES conference, October 20, 2020.
