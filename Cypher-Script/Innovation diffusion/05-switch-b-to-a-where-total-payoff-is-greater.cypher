@@ -1,8 +1,7 @@
 //05. Switch B to A where total payoff is greater
 MATCH (b:BStrategy)-[:INTERACTS]-(a:AStrategy)
-WITH b
+WITH DISTINCT b
 MATCH (b)-[:INTERACTS]-(n)
-WITH DISTINCT b, n
 WITH b, SUM(CASE WHEN "AStrategy" in labels(n) 
                  THEN $aReward 
             END) AS aRewardSum, 
