@@ -1,5 +1,4 @@
 // 06. Switch B to A iteratively
-//Switch all B to A
 CALL apoc.periodic.commit(
 'MATCH (p:BStrategy)-[:INTERACTS]-(a:AStrategy)
 WITH DISTINCT p
